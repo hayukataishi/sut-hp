@@ -2,13 +2,13 @@ import React, { useContext } from 'react';
 import { Container } from 'react-bootstrap';
 import { Link } from 'react-scroll';
 import PortfolioContext from '../../context/context';
-import GithubButtons from '../GithubButtons/GithubButtons';
+import ShareButtons from '../ShareButtons/ShareButtons';
 
 import { githubButtons } from '../../mock/data';
 
 const Footer = () => {
   const { footer } = useContext(PortfolioContext);
-  const { networks } = footer;
+  // const { networks } = footer;
   const { isEnabled } = githubButtons;
 
   return (
@@ -19,7 +19,7 @@ const Footer = () => {
             <i className="fa fa-angle-up fa-2x" aria-hidden="true" />
           </Link>
         </span>
-        <div className="social-links">
+        {/* <div className="social-links">
           {networks &&
             networks.map((network) => {
               const { id, name, url } = network;
@@ -35,16 +35,11 @@ const Footer = () => {
                 </a>
               );
             })}
-        </div>
+        </div> */}
         <hr />
-        <p className="footer__text">
-          © {new Date().getFullYear()} - Template developed by{' '}
-          <a href="https://github.com/cobidev" target="_blank" rel="noopener noreferrer">
-            Jacobo Martínez
-          </a>
-        </p>
+        <p className="footer__text">© {new Date().getFullYear()} - SUPER ULTRA THUNDER </p>
 
-        {isEnabled && <GithubButtons />}
+        {isEnabled && <ShareButtons />}
       </Container>
     </footer>
   );
