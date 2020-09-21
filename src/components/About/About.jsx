@@ -29,10 +29,12 @@ const About = () => {
         <Row className="about-wrapper">
           <Col md={6} sm={12}>
             <Bounce left={isDesktop} bottom={isMobile} duration={1000} delay={600} distance="30px">
-              <div className="about-wrapper__image">
-                <AboutImg alt="profile picture" filename={img} />
-              </div>
-              <p>代表取締役社長　羽床 大志（はゆか たいし）</p>
+              <>
+                <div className="about-wrapper__image">
+                  <AboutImg alt="profile picture" filename={img} />
+                </div>
+                <p>代表取締役社長　羽床 大志（はゆか たいし）</p>
+              </>
             </Bounce>
           </Col>
           <Col md={6} sm={12}>
