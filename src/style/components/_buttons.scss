@@ -68,7 +68,6 @@
   border-radius: 99rem;
   overflow: hidden;
 
-
   &::after {
     background: $white-color;
   }
@@ -90,4 +89,9 @@
 
 .share-button {
   margin: 1.6rem 1.6rem;
+}
+
+.icon-white {
+  color: gray;
+  padding: 0.7rem;
 }

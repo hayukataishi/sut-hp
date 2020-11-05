@@ -37,6 +37,21 @@
       }
     }
 
+    &__name {
+      display: flex;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+      margin-top: 10px;
+
+      @include respond(tab-port) {
+        padding-bottom: 6.4rem;
+      }
+      @include respond(tab-land) {
+        height: 100%;
+      }
+    }
+
     &__info {
       display: flex;
       height: 100%;

@@ -26,27 +26,30 @@ const ShareButton = () => {
 
   return (
     <>
-      <TwitterShareButton
-        className="share-button"
-        url="https://suspicious-jennings-0dd049.netlify.app/"
-        title="タイトル"
-      >
-        <TwitterIcon round size={iconSize} />
-      </TwitterShareButton>
-      <FacebookShareButton
-        className="share-button"
-        url="https://suspicious-jennings-0dd049.netlify.app/"
-        title="タイトル"
-      >
-        <FacebookIcon round size={iconSize} />
-      </FacebookShareButton>
-      <LineShareButton
-        className="share-button"
-        url="https://suspicious-jennings-0dd049.netlify.app/"
-        title="タイトル"
-      >
-        <LineIcon round size={iconSize} />
-      </LineShareButton>
+      <p className="footer__text">＼シェアよろしくお願いします／</p>
+      <>
+        <TwitterShareButton
+          className="share-button"
+          url="https://suspicious-jennings-0dd049.netlify.app/"
+          title="タイトル"
+        >
+          <TwitterIcon round size={iconSize} />
+        </TwitterShareButton>
+        <FacebookShareButton
+          className="share-button"
+          url="https://suspicious-jennings-0dd049.netlify.app/"
+          title="タイトル"
+        >
+          <FacebookIcon round size={iconSize} />
+        </FacebookShareButton>
+        <LineShareButton
+          className="share-button"
+          url="https://suspicious-jennings-0dd049.netlify.app/"
+          title="タイトル"
+        >
+          <LineIcon round size={iconSize} />
+        </LineShareButton>
+      </>
     </>
   );
 };

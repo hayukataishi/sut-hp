@@ -28,23 +28,35 @@ const About = () => {
         <Title title="SUPER ULTRA THUNDERについて" />
         <Row className="about-wrapper">
           <Col md={6} sm={12}>
-            <Bounce left={isDesktop} bottom={isMobile} duration={1000} delay={600} distance="30px">
+            <Bounce left={isDesktop || isMobile} duration={1000} delay={600} distance="30px">
               <>
                 <div className="about-wrapper__image">
                   <AboutImg alt="profile picture" filename={img} />
                 </div>
-                <p>代表取締役社長　羽床 大志（はゆか たいし）</p>
+                <div className="about-wrapper__name">
+                  <p>代表取締役　羽床 大志（はゆか たいし）</p>
+                </div>
+                {/* <div>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href={'https://twitter.com/tin_channel'}
+                  >
+                    <i className="fa fa-twitter fa-2x fa-button icon-white" aria-hidden="true" />
+                  </a>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href={'https://www.instagram.com/hayukataishi/?hl=ja'}
+                  >
+                    <i className="fa fa-instagram fa-2x fa-button icon-white" aria-hidden="true" />
+                  </a>
+                </div> */}
               </>
             </Bounce>
           </Col>
           <Col md={6} sm={12}>
-            <Bounce
-              right={isDesktop}
-              bottom={isMobile}
-              duration={1000}
-              delay={1000}
-              distance="30px"
-            >
+            <Bounce right={isDesktop || isMobile} duration={1000} delay={1000} distance="30px">
               <div className="about-wrapper__info">
                 <p className="about-wrapper__info-text">
                   {paragraphOne ||
@@ -69,6 +81,31 @@ const About = () => {
                     </a>
                   </span>
                 )}
+              </div>
+            </Bounce>
+          </Col>
+        </Row>
+        <Row className="about-wrapper">
+          <Col md={6} sm={12}>
+            <Bounce left={isDesktop || isMobile} duration={1000} delay={600} distance="30px">
+              <div>
+                <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/tin_channel">
+                  <i className="fa fa-twitter fa-2x fa-button icon-white" aria-hidden="true" />
+                </a>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://www.instagram.com/hayukataishi/?hl=ja"
+                >
+                  <i className="fa fa-instagram fa-2x fa-button icon-white" aria-hidden="true" />
+                </a>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://www.youtube.com/channel/UCS8HogDJIQe4k1TJQK8KtrQ"
+                >
+                  <i className="fa fa-youtube-play fa-2x fa-button icon-white" aria-hidden="true" />
+                </a>
               </div>
             </Bounce>
           </Col>
