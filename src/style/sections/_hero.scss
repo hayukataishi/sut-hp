@@ -39,7 +39,7 @@
       text-align: center;
     }
     @include respond(phone) {
-      font-size: 3.5rem;
+      font-size: 3rem;
       line-height: 1.5;
     }
     @include respond(phone-xs) {
@@ -68,5 +68,6 @@
     z-index: 9999;
     right: 40px;
     bottom: 40px;
+    width:20rem;
   }
 }

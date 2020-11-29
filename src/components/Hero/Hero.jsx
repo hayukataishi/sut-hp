@@ -4,6 +4,7 @@ import Fade from 'react-reveal/Fade';
 import LightSpeed from 'react-reveal/LightSpeed';
 import { Link } from 'react-scroll';
 import PortfolioContext from '../../context/context';
+import BannerIcon from '../../images/sut_bannericon.png';
 
 const Header = () => {
   const { hero } = useContext(PortfolioContext);
@@ -42,9 +43,17 @@ const Header = () => {
             </span>
           </p>
         </Fade>
-        <LightSpeed left={isDesktop} bottom={isMobile} duration={1000} delay={750} distance="30px">
-          <h1 className="hero-title-icon">{subtitle || "I'm the Unknown Developer."}</h1>
-        </LightSpeed>
+        {isDesktop && (
+          <LightSpeed
+            left={isDesktop}
+            bottom={isMobile}
+            duration={1000}
+            delay={750}
+            distance="30px"
+          >
+            <img className="hero-title-icon" src={BannerIcon} alt="BannerIcon" />
+          </LightSpeed>
+        )}
       </Container>
     </section>
   );

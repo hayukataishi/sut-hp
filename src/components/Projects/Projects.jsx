@@ -50,25 +50,16 @@ const Projects = () => {
                         <p className="mb-4">{info2 || ''}</p>
                         <p className="mb-4">{info3 || ''}</p>
                       </div>
-                      <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="cta-btn cta-btn--hero"
-                        href={url || '#!'}
-                      >
-                        気になる
-                      </a>
-
-                      {/* {repo && (
+                      {url && (
                         <a
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="cta-btn text-color-main"
-                          href={repo}
+                          className="cta-btn cta-btn--hero"
+                          href={url || '#!'}
                         >
-                          Source Code
+                          気になる
                         </a>
-                      )} */}
+                      )}
                     </div>
                   </Fade>
                 </Col>
@@ -81,30 +72,53 @@ const Projects = () => {
                     distance="30px"
                   >
                     <div className="project-wrapper__image">
-                      <a
-                        href={url || '#!'}
-                        target="_blank"
-                        aria-label="Project Link"
-                        rel="noopener noreferrer"
-                      >
-                        <Tilt
-                          options={{
-                            reverse: false,
-                            max: 8,
-                            perspective: 1000,
-                            scale: 1,
-                            speed: 300,
-                            transition: true,
-                            axis: null,
-                            reset: true,
-                            easing: 'cubic-bezier(.03,.98,.52,.99)',
-                          }}
+                      {!url && (
+                        <div>
+                          <Tilt
+                            options={{
+                              reverse: false,
+                              max: 8,
+                              perspective: 1000,
+                              scale: 1,
+                              speed: 300,
+                              transition: true,
+                              axis: null,
+                              reset: true,
+                              easing: 'cubic-bezier(.03,.98,.52,.99)',
+                            }}
+                          >
+                            <div data-tilt className="thumbnail rounded">
+                              <ProjectImg alt={title} filename={img} />
+                            </div>
+                          </Tilt>
+                        </div>
+                      )}
+                      {url && (
+                        <a
+                          href={url || '#!'}
+                          target="_blank"
+                          aria-label="Project Link"
+                          rel="noopener noreferrer"
                         >
-                          <div data-tilt className="thumbnail rounded">
-                            <ProjectImg alt={title} filename={img} />
-                          </div>
-                        </Tilt>
-                      </a>
+                          <Tilt
+                            options={{
+                              reverse: false,
+                              max: 8,
+                              perspective: 1000,
+                              scale: 1,
+                              speed: 300,
+                              transition: true,
+                              axis: null,
+                              reset: true,
+                              easing: 'cubic-bezier(.03,.98,.52,.99)',
+                            }}
+                          >
+                            <div data-tilt className="thumbnail rounded">
+                              <ProjectImg alt={title} filename={img} />
+                            </div>
+                          </Tilt>
+                        </a>
+                      )}
                     </div>
                   </Fade>
                 </Col>
