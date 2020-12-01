@@ -18,13 +18,22 @@ const Contact = () => {
             <div className="contact-wrapper__text">
               <p>{'〒460-0024\n愛知県名古屋市中区正木4丁目6-6第13フクマルビル505'}</p>
             </div>
-            <>
+            <div className="contact-icon-wrapper">
               <a
                 target="_blank"
                 rel="noopener noreferrer"
                 href={email ? `mailto:${email}` : 'https://github.com/cobidev/react-simplefolio'}
               >
                 <i className="fa fa-envelope fa-2x fa-button" aria-hidden="true" />
+              </a>
+              <a href="https://lin.ee/AHlJKyB">
+                <img
+                  height="36"
+                  border="0"
+                  src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png"
+                  alt="line"
+                  className="fa-button"
+                />
               </a>
               {/* <a
                 target="_blank"
@@ -54,7 +63,7 @@ const Contact = () => {
               >
                 <i className="fa fa-instagram fa-3x fa-button" aria-hidden="true" />
               </a> */}
-            </>
+            </div>
           </div>
         </Fade>
       </Container>

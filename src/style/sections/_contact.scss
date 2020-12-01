@@ -21,10 +21,6 @@
 
     &__text {
       margin-bottom: 2.5rem;
-    }
-
-    &__text,
-    a {
       font-size: 2.4rem;
 
       // Responsive for contact text
@@ -34,12 +30,21 @@
     }
   }
 
+  .contact-icon-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   .fa-button {
     color: $white-color;
-    margin: 1.6rem 1.6rem;
+    vertical-align: middle;
+    margin: 1.6rem;
+    font-size: 3.4rem;
 
-    &:hover {
-      size: 80%;
+    // Responsive for contact text
+    @include respond(phone) {
+      font-size: 2rem;
     }
-  }
+}
 }
