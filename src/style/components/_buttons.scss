@@ -38,11 +38,27 @@
     border: 2px solid $primary-color;
     -webkit-text-fill-color: $primary-color;
   }
+  @include respond(tab-port) {
+    background-image: none;
+    border: 2px solid $primary-color;
+    -webkit-text-fill-color: $primary-color;
+  }
+  @include respond(tab-land) {
+    background-image: none;
+    border: 2px solid $primary-color;
+    -webkit-text-fill-color: $primary-color;
+  }
 
   &::after {
     background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
     width: 100%;
     @include respond(phone) {
+      background-image: none;
+    }
+    @include respond(tab-port) {
+      background-image: none;
+    }
+    @include respond(tab-land) {
       background-image: none;
     }
   }
