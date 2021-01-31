@@ -105,6 +105,13 @@ const About = () => {
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
+                  href="https://www.facebook.com/hayuka.taishi/"
+                >
+                  <i className="fa fa-facebook fa-2x fa-button icon-white" aria-hidden="true" />
+                </a>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
                   href="https://www.youtube.com/channel/UCS8HogDJIQe4k1TJQK8KtrQ"
                 >
                   <i className="fa fa-youtube-play fa-2x fa-button icon-white" aria-hidden="true" />
