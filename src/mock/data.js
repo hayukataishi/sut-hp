@@ -52,15 +52,21 @@ export const projectsData = [
     info3: '会社関係なく、どれもイカしたデザインなので是非身につけてみてください！',
     url: 'https://suzuri.jp/hayukataishi',
   },
-  // {
-  //   id: nanoid(),
-  //   img: 'project.jpg',
-  //   title: '',
-  //   info: '',
-  //   info2: '',
-  //   url: '',
-  //   repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
-  // },
+];
+
+// COLLABORATE DATA
+export const collaborateData = [
+  {
+    id: nanoid(),
+    img: 'nostalgic.png',
+    title: 'nostalgic new world',
+    info: '愛知県名古屋市「鶴舞駅」の近くにお店を構える家具屋 "nostalgic new world"',
+    info2:
+      '「アップサイクル」というリサイクルやリメイクなどの視点とは異なり、単なる素材の 原料化・その他再利用ではなく、元の製品よりも次元、価値の高いものを生み出すことをコンセプトに置いた商品が特徴。',
+    info3:
+      'SUPER ULTRA THUNDERではHPやECサイトの製作・営業のサポート（SNS活用・SNS広告など）でお手伝いしております。',
+    url: 'https://www.nostalgicnewworld.jp/',
+  },
 ];
 
 // CONTACT DATA
