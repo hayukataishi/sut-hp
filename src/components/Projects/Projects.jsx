@@ -5,6 +5,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
 import ProjectImg from '../Image/ProjectImg';
+import IosLogo from '../../images/black.svg';
 
 const Projects = () => {
   const { projects } = useContext(PortfolioContext);
@@ -28,7 +29,7 @@ const Projects = () => {
         <div className="project-wrapper">
           <Title title="プロジェクト" />
           {projects.map((project) => {
-            const { title, info, info2, info3, url, img, id } = project;
+            const { title, info, info2, info3, url, ios, android, img, id } = project;
 
             return (
               <Row key={id}>
@@ -58,6 +59,20 @@ const Projects = () => {
                           href={url || '#!'}
                         >
                           気になる
+                        </a>
+                      )}
+                      {ios && (
+                        <a target="_blank" rel="noopener noreferrer" href={ios || '#!'}>
+                          <img src={IosLogo} alt="IosLogo" />
+                        </a>
+                      )}
+                      {android && (
+                        <a href={android}>
+                          <img
+                            style={{ width: 150 }}
+                            alt="Google Play で手に入れよう"
+                            src="https://play.google.com/intl/ja/badges/static/images/badges/ja_badge_web_generic.png"
+                          />
                         </a>
                       )}
                     </div>

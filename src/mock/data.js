@@ -41,6 +41,8 @@ export const projectsData = [
     info3:
       '今までのアーティストとファンの関係とは違い\nお互いの気持ちが投げっぱなしで終わらない\nリアルな反応や双方向のコミュニケーションを\n信頼できる仲間と楽しめるこの空間はあなたたちだけのもの。',
     url: '',
+    ios: '',
+    android: '',
   },
   {
     id: nanoid(),
@@ -51,6 +53,21 @@ export const projectsData = [
       'かっこいいデザインのものから、少し変わったなデザインのものまで数々のラインナップを揃えておリます！',
     info3: '会社関係なく、どれもイカしたデザインなので是非身につけてみてください！',
     url: 'https://suzuri.jp/hayukataishi',
+    ios: '',
+    android: '',
+  },
+  {
+    id: nanoid(),
+    img: 'kyouyaru.png',
+    title: 'きょうやる！',
+    info: '今日やることだけに絞ったタスク管理アプリ「きょうやる！」',
+    info2: '今までうまくタスク達成ができていなかったあなたへ。今日やることだけに絞ってみませんか？',
+    info3:
+      '現在、AppStoreにて配信中！\n是非ダウンロードして使ってみてください！レビューもお待ちしています！',
+    url: '',
+    ios:
+      'https://apps.apple.com/jp/app/%E3%81%8D%E3%82%87%E3%81%86%E3%82%84%E3%82%8B/id1548250082?itsct=apps_box&itscg=30200',
+    android: '',
   },
 ];
 
