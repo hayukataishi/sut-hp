@@ -84,6 +84,18 @@ export const collaborateData = [
       'SUPER ULTRA THUNDERではHPやECサイトの製作・営業のサポート（SNS活用・SNS広告など）でお手伝いしております。',
     url: 'https://www.nostalgicnewworld.jp/',
   },
+  {
+    id: nanoid(),
+    img: 'monyan.png',
+    title: 'moニャンfurniture',
+    info:
+      'moニャンfurnitureは猫の家具やインテリアにモダンスタイルを取り入れたお洒落でキュートな猫ちゃん専用のハイブランド家具屋さんです。',
+    info2:
+      'デザインは人用の家具・インテリアブランドを手掛けている専属デザイナーによるシンプルでスタイリッシュなモダンデザインを基調としています。\nまた商品の一つ一つは全て職人のハンドメイドで作られており温かみと繊細な技術がmoニャンfurnitureのこだわりと強みになります。',
+    info3:
+      'SUPER ULTRA THUNDERではHPやECサイトの製作・営業のサポート（SNS活用・SNS広告など）でお手伝いしております。',
+    url: 'https://monyanfurnit.thebase.in',
+  },
 ];
 
 // CONTACT DATA
