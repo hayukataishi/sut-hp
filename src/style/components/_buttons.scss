@@ -29,8 +29,8 @@
   border-width: 2px;
   border-radius: 99rem;
   overflow: hidden;
-  border-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
-  border-image-slice: 1;
+  // border-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+  // border-image-slice: 1;
   cursor: pointer;
   // Responsive Button hero style
   @include respond(phone) {
