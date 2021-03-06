@@ -120,6 +120,17 @@ const About = () => {
             </Bounce>
           </Col>
         </Row>
+        <div className="about-youtube">
+          <iframe
+            title="youtube"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/fePI6gi5_Gk"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
+        </div>
       </Container>
     </section>
   );

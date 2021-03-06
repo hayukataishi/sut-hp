@@ -94,4 +94,11 @@
       }
     }
   }
+
+  .about-youtube {
+    padding-top: 5rem;
+    @include respond(phone) {
+      padding-top: 5rem;
+    }
+  }
 }
