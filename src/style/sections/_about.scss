@@ -8,8 +8,8 @@
   color: $dark-blue-text;
   height: 100%;
   border-top: 0px;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  // -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  // clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   padding-bottom: 10%;
 
   @include respond(tab-land) {
@@ -96,9 +96,22 @@
   }
 
   .about-youtube {
-    padding-top: 5rem;
+    width:100%;              /*横幅いっぱいにwidthを指定*/
+    padding-bottom: 56.25%;  /*高さをpaddingで指定(16:9)*/
+    height:0px;              /*高さはpaddingで指定するためheightは0に*/
+    position: relative;
+
+    margin-top: 5rem;
     @include respond(phone) {
-      padding-top: 5rem;
+      margin-top: 0rem;
+    }
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
     }
   }
 }
