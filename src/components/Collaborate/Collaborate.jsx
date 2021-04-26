@@ -28,7 +28,7 @@ const Collaborate = () => {
         <div className="collaborate-wrapper">
           <Title title="コラボレーション" />
           {collaborate.map((collabo) => {
-            const { title, info, info2, info3, url, img, id } = collabo;
+            const { title, info, info2, info3, url, img, id, youtube } = collabo;
 
             return (
               <Row key={id}>
@@ -74,7 +74,7 @@ const Collaborate = () => {
                     distance="30px"
                   >
                     <div className="collaborate-wrapper__image">
-                      {!url && (
+                      {!url && !youtube && (
                         <div>
                           <Tilt
                             options={{
@@ -95,7 +95,7 @@ const Collaborate = () => {
                           </Tilt>
                         </div>
                       )}
-                      {url && (
+                      {url && !youtube && (
                         <a
                           href={url || '#!'}
                           target="_blank"
@@ -120,6 +120,21 @@ const Collaborate = () => {
                             </div>
                           </Tilt>
                         </a>
+                      )}
+                      {youtube && (
+                        <div>
+                          <div data-tilt className="thumbnail rounded">
+                            <iframe
+                              title="youtube"
+                              width="560"
+                              height="315"
+                              src={youtube}
+                              frameBorder="0"
+                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                              allowFullScreen
+                            />
+                          </div>
+                        </div>
                       )}
                     </div>
                   </Fade>

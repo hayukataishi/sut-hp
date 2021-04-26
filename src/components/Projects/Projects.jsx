@@ -29,7 +29,7 @@ const Projects = () => {
         <div className="project-wrapper">
           <Title title="プロジェクト" />
           {projects.map((project) => {
-            const { title, info, info2, info3, url, ios, android, img, id } = project;
+            const { title, info, info2, info3, url, ios, android, img, id, youtube } = project;
 
             return (
               <Row key={id}>
@@ -87,7 +87,7 @@ const Projects = () => {
                     distance="30px"
                   >
                     <div className="project-wrapper__image">
-                      {!url && (
+                      {!url && !youtube && (
                         <div>
                           <Tilt
                             options={{
@@ -108,7 +108,7 @@ const Projects = () => {
                           </Tilt>
                         </div>
                       )}
-                      {url && (
+                      {url && !youtube && (
                         <a
                           href={url || '#!'}
                           target="_blank"
@@ -133,6 +133,21 @@ const Projects = () => {
                             </div>
                           </Tilt>
                         </a>
+                      )}
+                      {youtube && (
+                        <div>
+                          <div data-tilt className="thumbnail rounded">
+                            <iframe
+                              title="youtube"
+                              width="560"
+                              height="315"
+                              src={youtube}
+                              frameBorder="0"
+                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                              allowFullScreen
+                            />
+                          </div>
+                        </div>
                       )}
                     </div>
                   </Fade>
