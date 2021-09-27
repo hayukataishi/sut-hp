@@ -27,9 +27,22 @@ const Projects = () => {
     <section id="projects">
       <Container>
         <div className="project-wrapper">
-          <Title title="プロジェクト" />
+          <Title title="事業・プロジェクト" />
           {projects.map((project) => {
-            const { title, info, info2, info3, url, ios, android, img, id, youtube } = project;
+            const {
+              title,
+              info,
+              info2,
+              info3,
+              url,
+              download,
+              downloadName,
+              ios,
+              android,
+              img,
+              id,
+              youtube,
+            } = project;
 
             return (
               <Row key={id}>
@@ -87,7 +100,7 @@ const Projects = () => {
                     distance="30px"
                   >
                     <div className="project-wrapper__image">
-                      {!url && !youtube && (
+                      {!url && !youtube && !download && (
                         <div>
                           <Tilt
                             options={{
@@ -108,13 +121,34 @@ const Projects = () => {
                           </Tilt>
                         </div>
                       )}
-                      {url && !youtube && (
+                      {url && !youtube && !download && (
                         <a
                           href={url || '#!'}
                           target="_blank"
                           aria-label="Project Link"
                           rel="noopener noreferrer"
                         >
+                          <Tilt
+                            options={{
+                              reverse: false,
+                              max: 8,
+                              perspective: 1000,
+                              scale: 1,
+                              speed: 300,
+                              transition: true,
+                              axis: null,
+                              reset: true,
+                              easing: 'cubic-bezier(.03,.98,.52,.99)',
+                            }}
+                          >
+                            <div data-tilt className="thumbnail rounded">
+                              <ProjectImg alt={title} filename={img} />
+                            </div>
+                          </Tilt>
+                        </a>
+                      )}
+                      {!url && !youtube && download && (
+                        <a href={`../../${download}` || '#!'} download={downloadName}>
                           <Tilt
                             options={{
                               reverse: false,

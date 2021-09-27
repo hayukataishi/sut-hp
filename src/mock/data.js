@@ -32,6 +32,21 @@ export const aboutData = {
 export const projectsData = [
   {
     id: nanoid(),
+    img: 'webdev.png',
+    title: 'WEB業務システム／WEBサービスの開発',
+    info: 'SUPER ULTRA THUNDERではWEB業務システム／WEBサービスの開発を請け負っております。',
+    info2:
+      'ただ、システムを開発することだけが私たちの仕事ではありません。お客様に寄り添いながら、お客様の実現したいことを理解する。',
+    info3: 'それを叶える１つの手段としてICTの力でサポートさせていただきます。',
+    url: '',
+    download: 'flow.zip',
+    downloadName: '開発の流れ(資料).zip',
+    youtube: '',
+    ios: '',
+    android: '',
+  },
+  {
+    id: nanoid(),
     img: 'indieindie.png',
     title: '【開発中】INDIE INDIE（インディーインディー）',
     info:
@@ -41,6 +56,8 @@ export const projectsData = [
     info3:
       '今までのアーティストとファンの関係とは違い\nお互いの気持ちが投げっぱなしで終わらない\nリアルな反応や双方向のコミュニケーションを\n信頼できる仲間と楽しめるこの空間はあなたたちだけのもの。',
     url: '',
+    download: '',
+    downloadName: '',
     youtube: '',
     ios: '',
     android: '',
@@ -54,6 +71,8 @@ export const projectsData = [
       'かっこいいデザインのものから、少し変わったなデザインのものまで数々のラインナップを揃えておリます！',
     info3: '会社関係なく、どれもイカしたデザインなので是非身につけてみてください！',
     url: 'https://suzuri.jp/hayukataishi',
+    download: '',
+    downloadName: '',
     youtube: '',
     ios: '',
     android: '',
@@ -67,6 +86,8 @@ export const projectsData = [
     info3:
       '現在、AppStoreにて配信中！\n是非ダウンロードして使ってみてください！レビューもお待ちしています！',
     url: '',
+    download: '',
+    downloadName: '',
     youtube: 'https://www.youtube.com/embed/-H7pMqfaYkc',
     ios:
       'https://apps.apple.com/jp/app/%E3%81%8D%E3%82%87%E3%81%86%E3%82%84%E3%82%8B/id1548250082?itsct=apps_box&itscg=30200',
