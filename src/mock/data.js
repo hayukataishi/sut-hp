@@ -32,6 +32,23 @@ export const aboutData = {
 export const projectsData = [
   {
     id: nanoid(),
+    img: 'dx.png',
+    title: 'DX無料相談',
+    info: 'SUPER ULTRA THUNDERではDX無料相談を受け付けております。',
+    info2: `昨今、急激なビジネス環境の変化を乗り越えるカギとして注目を集めている『DX』(デジタルトランスフォーメーション)
+    データやデジタル技術を活用して、製品やサービス、ビジネスモデルだけではなく、業務そのものや組織を変えていくのがDXの主な目的ですが、DXを推進する上で大切なことがあります。
+    それは「変わる勇気」です。
+    定着した業務・組織・プロセス・企業文化、風土を変えるのは、なかなか難しいことですが、DXはそのきっかけとなり、背中を押してくれます。`,
+    info3: `デジタル技術で今までの仕事を便利にしたい、だけではなく、DXを機に業務・組織・プロセス・企業文化などの見直しを行い新しい組織へと生まれ変わりましょう！`,
+    url: '',
+    download: '',
+    downloadName: '',
+    youtube: '',
+    ios: '',
+    android: '',
+  },
+  {
+    id: nanoid(),
     img: 'webdev.png',
     title: 'WEB業務システム／WEBサービスの開発',
     info: 'SUPER ULTRA THUNDERではWEB業務システム／WEBサービスの開発を請け負っております。',

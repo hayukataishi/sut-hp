@@ -173,8 +173,6 @@ const Projects = () => {
                           <div data-tilt className="thumbnail rounded">
                             <iframe
                               title="youtube"
-                              width="560"
-                              height="315"
                               src={youtube}
                               frameBorder="0"
                               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
